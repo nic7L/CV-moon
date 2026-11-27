@@ -3,52 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VERONIC — An Orbit of Ideas</title>
-  <meta name="description" content="Immersive lunar portfolio for Bairipogu Veronic Abhijay." />
-  <meta name="author" content="Bairipogu Veronic Abhijay" />
-  <meta name="theme-color" content="#050813" />
-  <meta property="og:title" content="VERONIC — An Orbit of Ideas" />
-  <meta property="og:description" content="Moon-themed dream CV and portfolio." />
-  <meta property="og:type" content="website" />
+  <title>Veronic Abhijay | Moon CV</title>
+  <meta name="description" content="A moon-themed personal CV website for Bairipogu Veronic Abhijay, aspiring AI Engineer." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="loading-screen" aria-hidden="true">
-    <div class="loading-ring"></div>
-    <p>Preparing lunar experience</p>
-  </div>
+  <div class="starfield"></div>
+  <div class="nebula"></div>
 
-  <canvas id="webgl-canvas" aria-hidden="true"></canvas>
-  <div class="backdrop-glow"></div>
-  <div class="star-overlay"></div>
-  <div class="scan-noise"></div>
-
-  <div class="shooting-stars" aria-hidden="true">
-    <span></span><span></span><span></span><span></span>
-  </div>
-
-  <a class="skip-link" href="#hero">Skip to content</a>
-
-  <header class="site-header glass">
-    <a class="brand" href="#hero">
-      <span class="brand-orbit"></span>
-      <div>
-        <strong>VERONIC</strong>
-        <small>Moon CV</small>
-      </div>
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <span class="brand-dot"></span>
+      <span>Veronic Abhijay</span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    <nav class="nav desktop-nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <nav class="nav mobile-nav" hidden>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -57,177 +29,236 @@
     </nav>
   </header>
 
-  <div class="hud left-hud"><span id="scroll-progress"></span></div>
-  <div class="hud right-hud glass">
-    <span>Current section</span>
-    <strong id="current-section">Hero</strong>
-  </div>
-
   <main>
-    <section id="hero" class="panel active" data-section-name="Hero" data-scene-index="0">
-      <div class="content hero-layout parallax-layer" data-parallax="0.16">
-        <div class="hero-copy glass reveal-up">
-          <p class="eyebrow">Dream CV • Immersive Edition</p>
-          <h1>VERONIC<br><span>AN ORBIT OF IDEAS</span></h1>
-          <p class="lead">
-            BAIRIPOGU VERONIC ABHIJAY • B.Tech CSE • A moon-themed dream CV built around ambition, projects, and the future I want to create in AI.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn primary" href="#projects">Explore Projects</a>
-            <a class="btn secondary" href="#contact">Connect</a>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Dream CV • Moon Edition</p>
+        <h1>
+          Building my path to become a
+          <span>Google AI Engineer</span>
+        </h1>
+        <p class="lead">
+          I am <strong>BAIRIPOGU VERONIC ABHIJAY</strong>, a B.Tech CSE student at Lovely Professional University.
+          I love building things on the web, exploring artificial intelligence, and imagining how AI and blockchain can solve real-world problems.
+        </p>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">Programme</span>
+            <strong>B.Tech CSE</strong>
           </div>
-        </div>
-        <div class="hero-card-stack reveal-up delay-1">
-          <article class="glass hero-card">
-            <span>Dream Role</span>
-            <strong>Google AI Engineer</strong>
-          </article>
-          <article class="glass hero-card">
-            <span>Registration</span>
+          <div>
+            <span class="meta-label">Registration</span>
             <strong>12617029</strong>
-          </article>
-          <article class="glass hero-card">
-            <span>Section</span>
+          </div>
+          <div>
+            <span class="meta-label">Section</span>
             <strong>K4P26AJ</strong>
-          </article>
-          <article class="glass hero-card">
-            <span>Focus</span>
-            <strong>AI • Blockchain • Web</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="panel" data-section-name="About" data-scene-index="1">
-      <div class="content split reveal-up parallax-layer" data-parallax="0.12">
-        <div>
-          <p class="eyebrow">About Me</p>
-          <h2>Ambition with curiosity, creativity, and a futuristic mindset</h2>
-          <p class="body-text">
-            I genuinely enjoy technology, coding, and the process of turning ideas into something useful and memorable. The fields that attract me the most are <strong>Artificial Intelligence</strong> and <strong>Blockchain</strong>.
-          </p>
-          <p class="body-text">
-            I do not want to stop at simply getting a job. I want to build a strong career foundation, work on meaningful products, and eventually create something that feels powerful, original, and ahead of its time.
-          </p>
-        </div>
-        <div class="trait-grid">
-          <article class="glass trait-card">
-            <h3>Problem Solver</h3>
-            <p>I like finding practical answers to difficult problems.</p>
-          </article>
-          <article class="glass trait-card">
-            <h3>Creative</h3>
-            <p>I enjoy ideas that look bold, elegant, and futuristic.</p>
-          </article>
-          <article class="glass trait-card">
-            <h3>Leadership</h3>
-            <p>I like taking initiative and thinking beyond the obvious.</p>
-          </article>
-          <article class="glass trait-card">
-            <h3>Critical Thinking</h3>
-            <p>I question, analyse, and always try to improve things.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="panel" data-section-name="Skills" data-scene-index="2">
-      <div class="content split reveal-up parallax-layer" data-parallax="0.08">
-        <div>
-          <p class="eyebrow">Technical Universe</p>
-          <h2>Technologies, tools, and strengths</h2>
-          <div class="chips">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI</span><span>Blockchain</span>
-            <span>VS Code</span><span>GitHub</span><span>Canva</span><span>LinkedIn</span>
           </div>
         </div>
-        <div class="glass skill-box">
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore My Work</a>
+          <a class="btn btn-secondary" href="#contact">Connect</a>
+        </div>
+      </div>
+
+      <div class="moon-stage reveal">
+        <div class="orbital-ring orbital-ring-1"></div>
+        <div class="orbital-ring orbital-ring-2"></div>
+        <div class="moon-card">
+          <div class="moon-glow"></div>
+          <div class="moon"></div>
+          <div class="moon-caption">
+            <p>Future Focus</p>
+            <h2>AI • Web • Blockchain</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about">
+      <div class="panel reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>A curious builder with long-term vision</h2>
+        <p>
+          I chose Computer Science because I am genuinely interested in technology, coding, and creating something meaningful.
+          What excites me the most is the future of <strong>Artificial Intelligence</strong> and the possibilities of <strong>Blockchain</strong>.
+        </p>
+        <p>
+          My dream is not just to get a job, but to grow into someone who creates intelligent products, solves hard problems,
+          and eventually builds a powerful tech-driven future of my own.
+        </p>
+      </div>
+      <div class="panel reveal">
+        <p class="eyebrow">Personal Edge</p>
+        <div class="trait-grid">
+          <article>
+            <h3>Problem Solver</h3>
+            <p>I enjoy breaking down challenges and thinking through practical ways to solve them.</p>
+          </article>
+          <article>
+            <h3>Creative Thinker</h3>
+            <p>I like ideas that feel fresh, futuristic, and visually engaging.</p>
+          </article>
+          <article>
+            <h3>Leadership Mindset</h3>
+            <p>I naturally think ahead, take initiative, and enjoy guiding a direction.</p>
+          </article>
+          <article>
+            <h3>Critical Perspective</h3>
+            <p>I prefer looking deeper, questioning things, and improving what already exists.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills & Competencies</p>
+        <h2>What I use today and where I’m already strong</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="panel reveal">
+          <h3>Technical Stack</h3>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Artificial Intelligence</span>
+            <span>Blockchain</span>
+            <span>VS Code</span>
+            <span>GitHub</span>
+            <span>Canva</span>
+            <span>LinkedIn</span>
+          </div>
+        </div>
+        <div class="panel reveal">
           <h3>Competency Map</h3>
-          <div class="meter"><label>Programming</label><div><i style="width:70%"></i></div><b>7/10</b></div>
-          <div class="meter"><label>Problem Solving</label><div><i style="width:90%"></i></div><b>9/10</b></div>
-          <div class="meter"><label>Communication</label><div><i style="width:70%"></i></div><b>7/10</b></div>
-          <div class="meter"><label>Leadership</label><div><i style="width:90%"></i></div><b>9/10</b></div>
-          <div class="meter"><label>Team Work</label><div><i style="width:80%"></i></div><b>8/10</b></div>
-          <div class="meter"><label>Time Management</label><div><i style="width:90%"></i></div><b>9/10</b></div>
-          <div class="meter"><label>Presentation Skills</label><div><i style="width:70%"></i></div><b>7/10</b></div>
+          <div class="bars">
+            <div class="bar"><span>Programming</span><div><i style="width:70%"></i></div><strong>7/10</strong></div>
+            <div class="bar"><span>Problem Solving</span><div><i style="width:90%"></i></div><strong>9/10</strong></div>
+            <div class="bar"><span>Communication</span><div><i style="width:70%"></i></div><strong>7/10</strong></div>
+            <div class="bar"><span>Leadership</span><div><i style="width:90%"></i></div><strong>9/10</strong></div>
+            <div class="bar"><span>Team Work</span><div><i style="width:80%"></i></div><strong>8/10</strong></div>
+            <div class="bar"><span>Time Management</span><div><i style="width:90%"></i></div><strong>9/10</strong></div>
+            <div class="bar"><span>Presentation Skills</span><div><i style="width:70%"></i></div><strong>7/10</strong></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="panel" data-section-name="Projects" data-scene-index="3">
-      <div class="content reveal-up parallax-layer" data-parallax="0.11">
-        <p class="eyebrow">Projects</p>
-        <h2>Things I have built while learning by doing</h2>
-        <div class="project-grid">
-          <article class="glass project-card">
-            <div class="moon-badge full"></div>
-            <p class="project-type">Interactive Web</p>
-            <h3>Fish / Eco-Habit Advisor</h3>
-            <p>A creative web project showing my interest in engaging interfaces and unique digital experiences.</p>
-            <a href="https://fish-mauve.vercel.app" target="_blank" rel="noreferrer">Open project ↗</a>
-          </article>
-          <article class="glass project-card">
-            <div class="moon-badge gibbous"></div>
-            <p class="project-type">Healthcare Directory</p>
-            <h3>MediFind</h3>
-            <p>A website to help users discover clinics, labs, pharmacies, and support facilities with clarity.</p>
-            <a href="https://nic7l.github.io/medifind/index.html" target="_blank" rel="noreferrer">Open project ↗</a>
-          </article>
-          <article class="glass project-card">
-            <div class="moon-badge half"></div>
-            <p class="project-type">Game Project</p>
-            <h3>Pac-Man Game</h3>
-            <p>A browser game that let me explore interactivity, movement logic, and playful coding.</p>
-            <span class="muted">Included in my portfolio set</span>
-          </article>
-          <article class="glass project-card">
-            <div class="moon-badge crescent"></div>
-            <p class="project-type">Game Project</p>
-            <h3>Flappy Bird Game</h3>
-            <p>A project that strengthened my interest in front-end experimentation and game behaviour.</p>
-            <span class="muted">Included in my portfolio set</span>
-          </article>
-        </div>
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Projects that show how I learn by building</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-phase phase-full"></div>
+          <p class="project-type">Web Project</p>
+          <h3>Fish / Eco-Habit Advisor</h3>
+          <p>A creative web experience that reflects my interest in interactive design and user-focused development.</p>
+          <a href="https://fish-mauve.vercel.app" target="_blank" rel="noreferrer">Open Project ↗</a>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-phase phase-gibbous"></div>
+          <p class="project-type">Healthcare Directory</p>
+          <h3>MediFind</h3>
+          <p>A web platform to help users discover clinics, labs, pharmacies, and support facilities more easily.</p>
+          <a href="https://nic7l.github.io/medifind/index.html" target="_blank" rel="noreferrer">Open Project ↗</a>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-phase phase-half"></div>
+          <p class="project-type">Game Project</p>
+          <h3>Pac-Man Game</h3>
+          <p>A browser game project that helped me think about interaction, movement logic, and a more playful side of coding.</p>
+          <span class="muted">Project available in my portfolio set</span>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-phase phase-crescent"></div>
+          <p class="project-type">Game Project</p>
+          <h3>Flappy Bird Game</h3>
+          <p>A simple game build that strengthened my interest in front-end experimentation and interactive programming.</p>
+          <span class="muted">Project available in my portfolio set</span>
+        </article>
       </div>
     </section>
 
-    <section id="roadmap" class="panel" data-section-name="Roadmap" data-scene-index="4">
-      <div class="content reveal-up parallax-layer" data-parallax="0.1">
-        <p class="eyebrow">Moon Phases of Growth</p>
-        <h2>Four stages of my future journey</h2>
-        <div class="timeline-grid">
-          <article class="glass timeline-card"><span>Phase 01</span><h3>Foundation</h3><p>Strengthen fundamentals and keep building visible web projects.</p></article>
-          <article class="glass timeline-card"><span>Phase 02</span><h3>Growth</h3><p>Focus more on Python and machine learning, and try for internships in 2nd and 3rd semesters.</p></article>
-          <article class="glass timeline-card"><span>Phase 03</span><h3>Specialisation</h3><p>Build more serious AI and Blockchain work with stronger technical depth.</p></article>
-          <article class="glass timeline-card"><span>Phase 04</span><h3>Vision</h3><p>Move toward a future AI role at Google while building a bigger long-term empire.</p></article>
-        </div>
+    <section class="section" id="roadmap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Moon Phases of My Journey</p>
+        <h2>A four-stage roadmap from foundation to future impact</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-step reveal">
+          <div class="timeline-moon moon-new"></div>
+          <div>
+            <h3>Phase 01 • Foundation</h3>
+            <p>Strengthen web development basics, keep building projects, and improve consistency in technical learning.</p>
+          </div>
+        </article>
+        <article class="timeline-step reveal">
+          <div class="timeline-moon moon-quarter"></div>
+          <div>
+            <h3>Phase 02 • Growth</h3>
+            <p>Focus on Python, machine learning, and deeper problem-solving. Try for internship opportunities in the 2nd and 3rd semesters.</p>
+          </div>
+        </article>
+        <article class="timeline-step reveal">
+          <div class="timeline-moon moon-gibbous"></div>
+          <div>
+            <h3>Phase 03 • Specialisation</h3>
+            <p>Move further into AI and Blockchain, build more serious projects, and grow a portfolio that shows real thinking.</p>
+          </div>
+        </article>
+        <article class="timeline-step reveal">
+          <div class="timeline-moon moon-full"></div>
+          <div>
+            <h3>Phase 04 • Vision</h3>
+            <p>Become career-ready for a future AI role at Google while also growing toward a larger dream of building something impactful.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="panel" data-section-name="Contact" data-scene-index="5">
-      <div class="content split reveal-up parallax-layer" data-parallax="0.07">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s connect</h2>
-          <p class="body-text">
-            I want to keep building, learning, and taking my work to a more advanced level in AI, web development, and product creation.
-          </p>
-          <a class="email-link" href="mailto:veronicabhijay@gmail.com">veronicabhijay@gmail.com</a>
-        </div>
-        <div class="glass contact-box">
-          <p>Online Profiles</p>
+    <section class="section split-section">
+      <div class="panel reveal">
+        <p class="eyebrow">Current Goal</p>
+        <h2>What I am focused on right now</h2>
+        <ul class="clean-list">
+          <li>Keep improving the quality of the projects I create.</li>
+          <li>Learn more deeply about AI and machine learning.</li>
+          <li>Build a stronger online presence through GitHub and LinkedIn.</li>
+          <li>Prepare early for internships and long-term career opportunities.</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <p class="eyebrow">Future Signature</p>
+        <blockquote>
+          “I want to become the kind of engineer who blends intelligence, creativity, and ambition into products that feel ahead of their time.”
+        </blockquote>
+        <p class="muted block-space">Dream company: <strong>Google</strong> • Dream role: <strong>AI Engineer</strong></p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+      </div>
+      <div class="contact-panel panel reveal">
+        <a href="mailto:veronicabhijay@gmail.com" class="contact-link">veronicabhijay@gmail.com</a>
+        <div class="contact-links">
           <a href="https://www.linkedin.com/in/veronic-abhijay-b9585844a" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href="https://github.com/nic7L" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <blockquote>“I want to become the kind of engineer who blends intelligence, creativity, and ambition into products that feel ahead of their time.”</blockquote>
         </div>
       </div>
     </section>
   </main>
 
-  <script type="importmap">
-    {"imports": {"three": "https://unpkg.com/three@0.161.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"}}
-  </script>
-  <script>setTimeout(() => document.getElementById("loading-screen")?.classList.add("hidden"), 3500);</script>
-  <script type="module" src="script.js"></script>
+  <footer class="site-footer">
+    <p>Designed as a moon-themed Dream CV for BAIRIPOGU VERONIC ABHIJAY.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
