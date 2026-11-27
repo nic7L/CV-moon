@@ -1,32 +1,9 @@
-# VERONIC — Moon CV (GitHub-ready replacement)
+# VERONIC — Simple Moon CV 🌙
 
-This package is structured for your `CV-moon` repository root.
+A clean, moon-themed Dream CV and portfolio for Bairipogu Veronic Abhijay.
 
-## Replace your repo contents with:
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
+Live website: https://nic7l.github.io/CV-moon/
 
-## Notes
-- This version is designed for GitHub Pages.
-- It uses imported `.glb` models for the astronaut, shuttle, and rover.
-- Models and planet textures are loaded from public CDNs / source URLs at runtime.
-- If any model fails to load, a simple fallback object is shown.
+This repository intentionally uses the **original, simple moon design**, with a CSS moon, a space-inspired background, CV sections, mobile navigation, and subtle scroll-in effects. The extra 3D astronaut, rover, shuttle, and external NASA models have been removed.
 
-## Live dependencies used at runtime
-- `three.js` from unpkg
-- `GLTFLoader` from unpkg
-- NASA 3D Resources `.glb` model URLs from jsDelivr GitHub CDN
-- Three.js example planet textures
-
-## Added upgrades
-- Imported GLB astronaut / shuttle / rover
-- Earth near the moon
-- Moon dust particles
-- Satellite lights
-- Shooting stars
-- Orbit glow trails
-- Parallax text transitions
-- Smooth section-based camera movement
-- Drag interaction
+Open `index.html` or view the live site on GitHub Pages. The HTML, CSS, and JavaScript are editable.
