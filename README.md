@@ -1,9 +1,11 @@
-# VERONIC — Simple Moon CV 🌙
+# VERONIC — Immersive Moon CV 🌙
 
-A clean, moon-themed Dream CV and portfolio for Bairipogu Veronic Abhijay.
+This is the **second original Moon CV version**: a cinematic, interactive WebGL moon experience with lunar-phase lighting, scroll-driven camera movement, drag-to-orbit, textured moon, gentle starfield and all CV sections.
 
-Live website: https://nic7l.github.io/CV-moon/
+It intentionally has **no astronaut, space shuttle, rover, imported 3D models, or extra particle effects**.
 
-This repository intentionally uses the **original, simple moon design**, with a CSS moon, a space-inspired background, CV sections, mobile navigation, and subtle scroll-in effects. The extra 3D astronaut, rover, shuttle, and external NASA models have been removed.
+Website: https://nic7l.github.io/CV-moon/
 
-Open `index.html` or view the live site on GitHub Pages. The HTML, CSS, and JavaScript are editable.
+Repository: https://github.com/nic7L/CV-moon
+
+Files: `index.html`, `styles.css`, `script.js`. GitHub Pages deploys from the `main` branch root.
