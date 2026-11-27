@@ -1,23 +1,32 @@
-# VERONIC — An Orbit of Ideas 🌙
+# VERONIC — Moon CV (GitHub-ready replacement)
 
-An interactive, moon-themed CV and portfolio for Bairipogu Veronic Abhijay.
+This package is structured for your `CV-moon` repository root.
 
-## Website
-Once GitHub Pages has been enabled, visit:
-https://nic7l.github.io/CV-moon/
-
-## Contents
-- `index.html` — portfolio sections, content and metadata
-- `styles.css` — dark lunar design, layout and responsive styling
-- `script.js` — interactive lunar effects, motion and navigation
-
-## Publish with GitHub Pages
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Choose **main** and **/(root)**, then click **Save**.
-4. Open the website link above once GitHub shows it as published.
-
-The site can be opened locally by opening `index.html` in a browser. For the fullest visual experience, use a modern browser with WebGL support.
+## Replace your repo contents with:
+- `index.html`
+- `styles.css`
+- `script.js`
+- `README.md`
 
 ## Notes
-The portfolio describes career ambitions as goals rather than completed achievements. This is a standalone project, separate from MediFind.
+- This version is designed for GitHub Pages.
+- It uses imported `.glb` models for the astronaut, shuttle, and rover.
+- Models and planet textures are loaded from public CDNs / source URLs at runtime.
+- If any model fails to load, a simple fallback object is shown.
+
+## Live dependencies used at runtime
+- `three.js` from unpkg
+- `GLTFLoader` from unpkg
+- NASA 3D Resources `.glb` model URLs from jsDelivr GitHub CDN
+- Three.js example planet textures
+
+## Added upgrades
+- Imported GLB astronaut / shuttle / rover
+- Earth near the moon
+- Moon dust particles
+- Satellite lights
+- Shooting stars
+- Orbit glow trails
+- Parallax text transitions
+- Smooth section-based camera movement
+- Drag interaction
